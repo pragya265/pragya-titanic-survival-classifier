@@ -50,26 +50,26 @@ tab_4_layout = html.Div([
         html.Div('Select:', className='one column'),
         html.Div([
             html.Div('Title'),
-            dcc.RadioItems(
-                id='title_radio',
+            dcc.Dropdown(
+                id='title_dropdown',
                 options=[{'label': i, 'value': i} for i in ['Mr.', 'Miss', 'Mrs.', 'VIP']],
-                value='None',
+                value='Mr.',
                 ),
         ],className='three columns'),
         html.Div([
             html.Div('Sex'),
-            dcc.RadioItems(
-                id='sex_radio',
+            dcc.Dropdown(
+                id='sex_dropdwon',
                 options=[{'label': i, 'value': i} for i in ['Male', 'Female']],
-                value='None',
+                value='Male',
                 ),
         ],className='three columns'),
         html.Div([
             html.Div('Port of Embarkation'),
-            dcc.RadioItems(
-                id='port_radio',
+            dcc.Dropdown(
+                id='port_dropdwon',
                 options=[{'label': i, 'value': i} for i in ['Cherbourg', 'Queenstown', 'Southampton']],
-                value='None',
+                value='Cherbourg',
                 ),
         ],className='five columns'),
     ],className='twelve columns'),
