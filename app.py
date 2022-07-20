@@ -120,9 +120,9 @@ def update_user_table(family, age, cabin, title, sex, embark):
               Input('family_dropdown', 'value'),
               Input('age_dropdown', 'value'),
               Input('cabin_dropdown', 'value'),
-              Input('title_radio', 'value'),
-              Input('sex_radio', 'value'),
-              Input('port_radio', 'value')
+              Input('title_dropdown', 'value'),
+              Input('sex_dropdown', 'value'),
+              Input('port_dropdown', 'value')
               ])
 def final_prediction(family, age, cabin, title, sex, embark):
     inputs=[family, age, cabin, title, sex, embark]
