@@ -59,7 +59,7 @@ tab_4_layout = html.Div([
         html.Div([
             html.Div('Sex'),
             dcc.Dropdown(
-                id='sex_dropdwon',
+                id='sex_dropdown',
                 options=[{'label': i, 'value': i} for i in ['Male', 'Female']],
                 value='Male',
                 ),
@@ -67,7 +67,7 @@ tab_4_layout = html.Div([
         html.Div([
             html.Div('Port of Embarkation'),
             dcc.Dropdown(
-                id='port_dropdwon',
+                id='port_dropdown',
                 options=[{'label': i, 'value': i} for i in ['Cherbourg', 'Queenstown', 'Southampton']],
                 value='Cherbourg',
                 ),
